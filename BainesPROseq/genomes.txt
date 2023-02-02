@@ -1,0 +1,14 @@
+#genome hg38
+#trackDb hg38/trackDb.txt
+
+genome GU734771.1
+trackDb trackDb.txt
+groups groups.txt
+description Human herpesvirus 1 strain F, complete genome, terminal repeat genes renamed
+twoBitPath GU734771.1.2bit
+organism Human herpesvirus 1 strain F
+defaultPos GU734771.1:1-152151
+#defaultPos GU734771:1-152151
+orderKey 4800
+scientificName Human herpesvirus 1 strain F
+htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
