@@ -1,0 +1,6 @@
+hub BainesHSV
+shortLabel Baines HSV Datasets
+longLabel Published HSV datasets aligned to repeatless GU734771.1
+genomesFile genomes.txt
+email adam-whisnant@uiowa.edu
+descriptionUrl https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1

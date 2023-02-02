@@ -1,0 +1,19 @@
+#name doi: https://doi.org/10.1128/JVI.02184-17
+#label Birkenheuer 2018 PRO-Seq
+#priority 1
+#defaultIsClosed 0
+
+#name doi: https://doi.org/10.1128/JVI.02035-19
+#label Birkenheuer 2020
+#priority 2
+#defaultIsClosed 0
+
+#name doi: https://doi.org/10.1128/jvi.01416-22
+#label Dunn 2022
+#priority 3
+#defaultIsClosed 0
+
+name Genbank name
+label Genbank label
+priority 1
+defaultIsClosed 0
