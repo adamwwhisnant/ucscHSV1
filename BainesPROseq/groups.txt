@@ -1,4 +1,4 @@
-name Genbank name
-label Genbank label
+name map
+label Mapping and Annotation
 priority 1
 defaultIsClosed 0
