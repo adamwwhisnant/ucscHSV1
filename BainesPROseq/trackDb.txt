@@ -1,8 +1,0 @@
-track GU734771.1-genbank
-type bigGenePred
-group map
-priority 1
-bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/bigGenePredwtf.bb
-longLabel Genbank longlabel
-shortLabel GenBank shortlabel
-visibility pack
