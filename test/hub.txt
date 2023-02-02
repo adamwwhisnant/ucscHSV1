@@ -2,5 +2,5 @@ hub ReplaceCMVwithHSV
 shortLabel ShortLabel
 longLabel LongLabel
 genomesFile genomes.txt
-email david-price@uiowa.edu
-descriptionUrl https://www.ncbi.nlm.nih.gov/nuccore/FJ616285.1 
+email test@uiowa.edu
+descriptionUrl someshit.com
