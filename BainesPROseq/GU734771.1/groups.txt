@@ -1,0 +1,4 @@
+name map
+label Genbank label
+priority 1
+defaultIsClosed 0
