@@ -1,10 +1,10 @@
 genome GU734771.1
 trackDb GU734771.1/trackDb.txt
 groups GU734771.1/groups.txt
-description Description
+description HSV-1 Strain F
 twoBitPath GU734771.1/wtF.2bit
-organism oragnism
+organism Human alphaherpesvirus 1, strain F
 defaultPos GU734771.1:1-152151
 orderKey 4800
-scientificName scientific name
+scientificName Human alphaherpesvirus 1, strain F
 htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
