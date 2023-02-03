@@ -4,7 +4,7 @@ groups GU734771.1/groups.txt
 description Description
 twoBitPath GU734771.1/wtF.2bit
 organism oragnism
-defaultPos GU734771.1:1-GU734771.1
+defaultPos GU734771.1:1-152151
 orderKey 4800
 scientificName scientific name
 htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
