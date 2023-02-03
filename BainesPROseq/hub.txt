@@ -3,4 +3,4 @@ shortLabel ShortLabel
 longLabel LongLabel
 genomesFile genomes.txt
 email test@uiowa.edu
-descriptionUrl someshit.com
+descriptionUrl https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
