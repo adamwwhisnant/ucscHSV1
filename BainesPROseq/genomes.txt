@@ -1,0 +1,10 @@
+genome GU734771.1
+trackDb GU734771.1/trackDb.txt
+groups GU734771.1/groups.txt
+description Description
+twoBitPath GU734771.1/wtF.2bit
+organism oragnism
+defaultPos GU734771.1:1-GU734771.1
+orderKey 4800
+scientificName scientific name
+htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
