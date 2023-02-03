@@ -1,4 +1,4 @@
-track FJ616285.1-genbank
+track GU734771.1-genbank
 type bigGenePred
 group map
 priority 1
