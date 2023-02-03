@@ -1,6 +1,6 @@
 genome FJ616285.1
-trackDb FJ616285.1/trackDb.txt
-groups FJ616285.1/groups.txt
+trackDb FJ616285.1/trackTrunc.txt
+groups FJ616285.1/groupsTunc.txt
 description 2013-05-09 Human herpesvirus 5 strain Towne
 twoBitPath FJ616285.1/FJ616285.1.2bit
 organism Human cytomegalovirus
