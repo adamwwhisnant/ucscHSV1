@@ -4,7 +4,7 @@ twoBitPath http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.2bit
 description Human genome build hg38
 organism Human
 defaultPos chr21:33031596-33033258
-orderKey 4800
+orderKey 4700
 scientificName Homo sapiens
 htmlPath http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 
