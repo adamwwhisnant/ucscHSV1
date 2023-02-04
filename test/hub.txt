@@ -1,6 +1,0 @@
-hub ReplaceCMVwithHSV
-shortLabel ShortLabel
-longLabel LongLabel
-genomesFile genomes.txt
-email test@uiowa.edu
-descriptionUrl someshit.com
