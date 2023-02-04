@@ -1,6 +1,6 @@
 hub PRO-Seq Data from Joel Baines
-shortLabel Baines PRO-Seq
-longLabel Published data of HSV-1-infected HEp-2 cells from Joel Baines
+shortLabel Baines PRO-Seq HSV+Hsa
+longLabel Published data of HSV-1-infected HEp-2 cells from Joel Baines with virus and human
 genomesFile genomesHSVhsa.txt
 email adam-whisnant@uiowa.edu
 descriptionUrl https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
