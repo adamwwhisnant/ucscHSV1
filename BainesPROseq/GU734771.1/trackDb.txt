@@ -2,7 +2,7 @@ track GU734771.1-genbank
 type bigGenePred
 group map
 priority 1
-bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/GU734771.1/bigGenePredwtf.bb
+bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/GU734771.1/GU734771.1.bb
 longLabel longlabel
 shortLabel shortlabel
 visibility pack
