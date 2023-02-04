@@ -1,1 +1,7 @@
-
+track Homo sapiens
+type bigGenePred
+priority 1
+bigDataUrl http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.chromAlias.bb
+longLabel Filthy human
+shortLabel Human genes
+visibility pack
