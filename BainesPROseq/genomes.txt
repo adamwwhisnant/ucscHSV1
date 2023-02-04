@@ -2,7 +2,7 @@ genome GU734771.1
 trackDb GU734771.1/trackDb.txt
 groups GU734771.1/groups.txt
 description HSV-1 Strain F
-twoBitPath GU734771.1/wtF.2bit
+twoBitPath GU734771.1/GU734771.1.2bit
 organism Human alphaherpesvirus 1, strain F
 defaultPos GU734771.1:1-152151
 orderKey 4800
