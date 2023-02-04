@@ -1,0 +1,20 @@
+genome hg38
+trackDb hg38/trackDb.txt
+twoBitPath hg38/hg38.2bit
+description Human genome build hg38
+organism Human
+defaultPos chr21:33031596-33033258
+orderKey 4800
+scientificName Homo sapiens
+htmlPath http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
+
+genome GU734771.1
+trackDb GU734771.1/trackDb.txt
+groups GU734771.1/groups.txt
+description HSV-1 Strain F
+twoBitPath GU734771.1/GU734771.1.2bit
+organism Human alphaherpesvirus 1, strain F
+defaultPos GU734771.1:1-152151
+orderKey 4800
+scientificName Human alphaherpesvirus 1, strain F
+htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
