@@ -8,11 +8,18 @@ visibility pack
 
 #This is a test below, the above works
 
+track TSR-ROPE 
+superTrack on show
+group proseq
+priority 2
+shortLabel TSR ROPE
+longLabel Transcription Start Region and Regions of Productive Elongation
+
 track HSV1 3hr minus
 type bigWig -50 50
 visibility dense
 itemRgb on
-priority 2
+priority 2.1
 bigDataUrl https://anonfiles.com/F0tezbW1y2/GSM3736426_HSV13hr1_minus_bw
 longLabel Test bigWig
 shortLabel short test
