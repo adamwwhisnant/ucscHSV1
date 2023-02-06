@@ -5,3 +5,14 @@ bigDataUrl https://genome.ucsc.edu/goldenPath/help/examples/hubExamples/hubBigGe
 longLabel Filthy human
 shortLabel Human genes
 visibility pack
+
+#This is a test below, the above works
+
+track HSV1 3hr minus
+type bigWig -50 50
+visibility dense
+itemRgb on
+priority 2
+bigDataUrl https://anonfiles.com/F0tezbW1y2/GSM3736426_HSV13hr1_minus_bw
+longLabel Test bigWig
+shortLabel short test
