@@ -20,7 +20,7 @@ track PRO-Seq-DMSO-4h-TB40E-FW
 parent PRO-Seq-DMSO-4h-TB40E on
 type bigWig 0 1000
 visibility full
-bigDataUrl https://anonfiles.com/F0tezbW1y2/GSM3736426_HSV13hr1_minus_bw
+bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/hg38/test/GSM4182501_D1_plus.bw
 longLabel FW strand PRO-Seq in DMSO-treated HFF infected 4 hours with HCMV strain TB40/E
 shortLabel FW PRO-Seq DMSO 4h TB40/E
 negateValues off
