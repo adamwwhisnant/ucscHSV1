@@ -9,7 +9,7 @@ scientificName Homo sapiens
 htmlPath http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/
 
 genome HSV1F
-trackDb HSV1F/trackDb.txt
+trackDb HSV1F/trackDB.txt
 groups HSV1F/groups.txt
 description HSV-1 Strain F, repeat deleted
 twoBitPath HSV1F/HSV1F.2bit
