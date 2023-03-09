@@ -2,7 +2,7 @@ track GU734771.1-genbank
 type bigGenePred
 group map
 priority 1
-bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/GU734771.1/script02.bb
+bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/GU734771.1/script.bb
 longLabel Human herpesvirus 1 strain F, complete genome
 shortLabel shortlabel
 visibility pack
