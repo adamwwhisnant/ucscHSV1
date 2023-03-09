@@ -14,7 +14,7 @@ groups HSV1F/groups.txt
 description HSV-1 Strain F, repeat deleted
 twoBitPath HSV1F/HSV1F.2bit
 organism Human alphaherpesvirus 1, strain F
-defaultPos GU734771.1:1-136572
+defaultPos HSV1F:1-136572
 orderKey 2
 scientificName Human alphaherpesvirus 1, strain F
 htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
