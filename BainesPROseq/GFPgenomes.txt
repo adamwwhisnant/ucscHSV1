@@ -1,0 +1,10 @@
+genome HSV17_eGFP_VHScFLAG
+trackDb HSV17_eGFP_VHScFLAG/trackDb.txt
+groups HSV17_eGFP_VHScFLAG/groups.txt
+description HSV-1 Strain F
+twoBitPath HSV17_eGFP_VHScFLAG/cmvGFP.2bit
+organism Human alphaherpesvirus 1, strain F
+defaultPos HSV17_eGFP_VHScFLAG:1-163365
+orderKey 4800
+scientificName Human alphaherpesvirus 1, strain F
+htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
