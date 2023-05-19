@@ -1,7 +1,7 @@
 hub PRO-Seq Data from Whisnant and Price
 shortLabel Our PRO-Seq
 longLabel HSV-1-infected LUHMES cells
-genomesFile gfpgenomes.txt
+genomesFile GFPgenomes.txt
 email adam-whisnant@uiowa.edu
 descriptionUrl https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
 description Price PRO-Seq
