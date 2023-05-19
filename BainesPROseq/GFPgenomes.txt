@@ -4,8 +4,7 @@ groups HSV17+_eGFP_VHS-cFLAG/groups.txt
 description HSV-1 Strain 17 GFP BAC
 twoBitPath HSV17+_eGFP_VHS-cFLAG/cmvGFP.2bit
 organism Human alphaherpesvirus 1, strain F
-##defaultPos HSV17+_eGFP_VHS-cFLAG:1-163365
-defaultPos US1
+defaultPos HSV17+_eGFP_VHS-cFLAG:1-163365
 orderKey 4800
 scientificName Human alphaherpesvirus 1, BAC
 htmlPath https://www.ncbi.nlm.nih.gov/nuccore/GU734771.1
