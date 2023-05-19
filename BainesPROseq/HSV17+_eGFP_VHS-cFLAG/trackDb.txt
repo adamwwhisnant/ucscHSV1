@@ -1,0 +1,8 @@
+track HSV17+_eGFP_VHS-cFLAG
+type bigGenePred
+group map
+priority 1
+bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/BainesPROseq/HSV17+_eGFP_VHS-cFLAG/cmvGFPuseName.bb
+longLabel Human herpesvirus 1 strain 17 BAC
+shortLabel shortlabel
+visibility pack
