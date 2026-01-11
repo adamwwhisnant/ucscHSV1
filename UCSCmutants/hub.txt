@@ -1,5 +1,5 @@
 hub HSV1_Mutant_Comparison
-shortLabel HSV1_Mutants
+shortLabel HSV_Mutants
 longLabel HSV-1 Strain 17 Mutant 4SU-seq Coverage
 useOneFile on
 email adamwhisnant88@gmail.com
