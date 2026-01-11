@@ -37,11 +37,15 @@ defaultPos JN555585.1:1-152222
 
         track WT_Rep1
         parent WT_Group
+        shortLabel WT_R1
+        longLabel WT Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/WT_Rep1.bw
         type bigWig
 
         track WT_Rep2
         parent WT_Group
+        shortLabel WT_R2
+        longLabel WT Replicate 2
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/WT_Rep2.bw
         type bigWig
 
@@ -61,16 +65,22 @@ defaultPos JN555585.1:1-152222
 
         track dICP4_Rep1
         parent dICP4_TsK_Group
+        shortLabel dICP4_R1
+        longLabel dICP4 Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP4_Rep1.bw
         type bigWig
 
         track TsK_Rep1
         parent dICP4_TsK_Group
+        shortLabel TsK_R1
+        longLabel TsK Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/TsK_Rep1.bw
         type bigWig
 
         track TsK_Rep2
         parent dICP4_TsK_Group
+        shortLabel TsK_R2
+        longLabel TsK Replicate 2
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/TsK_Rep2.bw
         type bigWig
 
@@ -78,6 +88,7 @@ defaultPos JN555585.1:1-152222
     group coverage
     container multiWig
     shortLabel dICP0
+    longLabel dICP0 Mutant Coverage
     type bigWig
     visibility full
     aggregate transparentOverlay
@@ -89,11 +100,15 @@ defaultPos JN555585.1:1-152222
 
         track dICP0_Rep1
         parent dICP0_Group
+        shortLabel dICP0_R1
+        longLabel dICP0 Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP0_Rep1.bw
         type bigWig
 
         track dICP0_Rep2
         parent dICP0_Group
+        shortLabel dICP0_R2
+        longLabel dICP0 Replicate 2
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP0_Rep2.bw
         type bigWig
 
@@ -101,6 +116,7 @@ defaultPos JN555585.1:1-152222
     group coverage
     container multiWig
     shortLabel dICP22
+    longLabel dICP22 Mutant Coverage
     type bigWig
     visibility full
     aggregate transparentOverlay
@@ -112,11 +128,15 @@ defaultPos JN555585.1:1-152222
 
         track dICP22_Rep1
         parent dICP22_Group
+        shortLabel dICP22_R1
+        longLabel dICP22 Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP22_Rep1.bw
         type bigWig
 
         track dICP22_Rep2
         parent dICP22_Group
+        shortLabel dICP22_R2
+        longLabel dICP22 Replicate 2
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP22_Rep2.bw
         type bigWig
 
@@ -124,6 +144,7 @@ defaultPos JN555585.1:1-152222
     group coverage
     container multiWig
     shortLabel dICP27
+    longLabel dICP27 Mutant Coverage
     type bigWig
     visibility full
     aggregate transparentOverlay
@@ -135,11 +156,15 @@ defaultPos JN555585.1:1-152222
 
         track dICP27_Rep1
         parent dICP27_Group
+        shortLabel dICP27_R1
+        longLabel dICP27 Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP27_Rep1.bw
         type bigWig
 
         track dICP27_Rep2
         parent dICP27_Group
+        shortLabel dICP27_R2
+        longLabel dICP27 Replicate 2
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP27_Rep2.bw
         type bigWig
 
@@ -147,6 +172,7 @@ defaultPos JN555585.1:1-152222
     group coverage
     container multiWig
     shortLabel Mock
+    longLabel Mock Infected Controls
     type bigWig
     visibility hide
     aggregate transparentOverlay
@@ -158,10 +184,14 @@ defaultPos JN555585.1:1-152222
 
         track Mock_Rep1
         parent Mock_Group
+        shortLabel Mock_R1
+        longLabel Mock Replicate 1
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/Mock_Rep1.bw
         type bigWig
 
         track Mock_Rep2
         parent Mock_Group
+        shortLabel Mock_R2
+        longLabel Mock Replicate 2
         bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/Mock_Rep2.bw
         type bigWig
