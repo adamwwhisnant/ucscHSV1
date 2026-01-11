@@ -1,8 +1,8 @@
 hub HSV1_Mutant_Comparison
-shortLabel HSV1_Analysis
-longLabel HSV-1 Strain 17 Mutant RNA-seq Coverage
+shortLabel HSV1_Mutants
+longLabel HSV-1 Strain 17 Mutant 4SU-seq Coverage
 useOneFile on
-email your@email.com
+email adamwhisnant88@gmail.com
 
 genome JN555585.1
 twoBitPath https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/JN555585.1.2bit
