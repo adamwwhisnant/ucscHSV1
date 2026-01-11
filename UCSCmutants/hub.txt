@@ -1,0 +1,146 @@
+hub HSV1_Mutant_Comparison
+shortLabel HSV1_Analysis
+longLabel HSV-1 Strain 17 Mutant RNA-seq Coverage
+useOneFile on
+email your@email.com
+
+genome JN555585.1
+twoBitPath https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/JN555585.1.2bit
+groups groups.txt
+description HSV-1 Strain 17 (JN555585.1)
+organism Human Herpesvirus 1
+defaultPos JN555585.1:1-152222
+
+    track Viral_Genes
+    bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/JN555585.1_genes.bb
+    shortLabel Genes
+    longLabel HSV-1 Gene Annotations (Searchable)
+    type bigBed 6
+    visibility pack
+    searchIndex name
+    color 0,100,0
+
+    track Coverage_Data
+    compositeTrack on
+    shortLabel Coverage
+    longLabel RNA-seq Normalized Coverage (CPM)
+    type bigWig
+    visibility full
+    autoScale on
+    alwaysZero on
+    maxHeightPixels 100:60:10
+
+        track WT_Group
+        parent Coverage_Data
+        container multiWig
+        shortLabel WT_Samples
+        longLabel Wild-Type Controls
+        type bigWig
+        visibility full
+        color 0,0,0
+
+            track WT_Rep1
+            parent WT_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/WT_Rep1.bw
+            type bigWig
+
+            track WT_Rep2
+            parent WT_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/WT_Rep2.bw
+            type bigWig
+
+        track dICP4_TsK_Group
+        parent Coverage_Data
+        container multiWig
+        shortLabel dICP4_TsK
+        longLabel dICP4 and TsK Mutants
+        type bigWig
+        visibility full
+        color 255,0,0
+
+            track dICP4_Rep1
+            parent dICP4_TsK_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP4_Rep1.bw
+            type bigWig
+
+            track TsK_Rep1
+            parent dICP4_TsK_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/TsK_Rep1.bw
+            type bigWig
+
+            track TsK_Rep2
+            parent dICP4_TsK_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/TsK_Rep2.bw
+            type bigWig
+
+        track dICP0_Group
+        parent Coverage_Data
+        container multiWig
+        shortLabel dICP0
+        type bigWig
+        visibility full
+        color 0,0,255
+
+            track dICP0_Rep1
+            parent dICP0_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP0_Rep1.bw
+            type bigWig
+
+            track dICP0_Rep2
+            parent dICP0_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP0_Rep2.bw
+            type bigWig
+
+        track dICP22_Group
+        parent Coverage_Data
+        container multiWig
+        shortLabel dICP22
+        type bigWig
+        visibility full
+        color 255,165,0
+
+            track dICP22_Rep1
+            parent dICP22_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP22_Rep1.bw
+            type bigWig
+
+            track dICP22_Rep2
+            parent dICP22_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP22_Rep2.bw
+            type bigWig
+
+        track dICP27_Group
+        parent Coverage_Data
+        container multiWig
+        shortLabel dICP27
+        type bigWig
+        visibility full
+        color 128,0,128
+
+            track dICP27_Rep1
+            parent dICP27_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP27_Rep1.bw
+            type bigWig
+
+            track dICP27_Rep2
+            parent dICP27_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/dICP27_Rep2.bw
+            type bigWig
+
+        track Mock_Group
+        parent Coverage_Data
+        container multiWig
+        shortLabel Mock
+        type bigWig
+        visibility hide
+        color 169,169,169
+
+            track Mock_Rep1
+            parent Mock_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/Mock_Rep1.bw
+            type bigWig
+
+            track Mock_Rep2
+            parent Mock_Group
+            bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/bigwigs/Mock_Rep2.bw
+            type bigWig
