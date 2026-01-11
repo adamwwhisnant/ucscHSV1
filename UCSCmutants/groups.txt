@@ -1,0 +1,9 @@
+name genes
+label Gene Annotations
+priority 1
+defaultIsClosed off
+
+name coverage
+label 4SU-seq Coverage
+priority 2
+defaultIsClosed off
