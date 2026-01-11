@@ -11,7 +11,7 @@ description HSV-1 Strain 17 (JN555585.1)
 organism Human Herpesvirus 1
 defaultPos JN555585.1:1-152222
 
-    track Viral_Genes
+    track HSV_Genes
     group genes
     bigDataUrl https://github.com/adamwwhisnant/ucscHSV1/raw/refs/heads/main/UCSCmutants/JN555585.1_genes.bb
     shortLabel Genes
