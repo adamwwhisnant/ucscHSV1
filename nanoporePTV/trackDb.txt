@@ -1,4 +1,4 @@
-# --- Annotations Track (The Genes) ---
+# --- Annotations Track (Gene Search) ---
 track HSV_Genes
 group nanopore_data
 bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/UCSCmutants/JN555585.1_genes.bb
@@ -13,7 +13,7 @@ color 0,100,0
 # ==========================================================
 track 24h_Samples
 compositeTrack on
-parent nanopore_data
+group nanopore_data
 shortLabel 24h_Samples
 longLabel 24h Post-Infection Samples
 type bigBed 12
@@ -30,6 +30,18 @@ itemRgb on
     parent 24h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_24h-1.wdx05.HSV1.sorted.rev.bb
     shortLabel 24h_R1_R
+    type bigBed 12
+
+    track 24h_Std_R2_F
+    parent 24h_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_24h-2.wdx06.HSV1.sorted.fwd.bb
+    shortLabel 24h_R2_F
+    type bigBed 12
+
+    track 24h_Std_R2_R
+    parent 24h_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_24h-2.wdx06.HSV1.sorted.rev.bb
+    shortLabel 24h_R2_R
     type bigBed 12
 
     track 24h_PTV_R1_F
@@ -61,7 +73,7 @@ itemRgb on
 # ==========================================================
 track 8h_Samples
 compositeTrack on
-parent nanopore_data
+group nanopore_data
 shortLabel 8h_Samples
 longLabel 8h Post-Infection Samples
 type bigBed 12
@@ -80,6 +92,18 @@ itemRgb on
     shortLabel 8h_R1_R
     type bigBed 12
 
+    track 8h_Std_R2_F
+    parent 8h_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h-2.wdx04.HSV1.sorted.fwd.bb
+    shortLabel 8h_R2_F
+    type bigBed 12
+
+    track 8h_Std_R2_R
+    parent 8h_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h-2.wdx04.HSV1.sorted.rev.bb
+    shortLabel 8h_R2_R
+    type bigBed 12
+
     track 8h_PTV_R1_F
     parent 8h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h_ptv-1.wdx04.HSV1.sorted.fwd.bb
@@ -92,12 +116,24 @@ itemRgb on
     shortLabel 8h_P1_R
     type bigBed 12
 
+    track 8h_PTV_R2_F
+    parent 8h_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h_ptv-2.wdx05.HSV1.sorted.fwd.bb
+    shortLabel 8h_P2_F
+    type bigBed 12
+
+    track 8h_PTV_R2_R
+    parent 8h_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h_ptv-2.wdx05.HSV1.sorted.rev.bb
+    shortLabel 8h_P2_R
+    type bigBed 12
+
 # ==========================================================
 # MOCK SAMPLES
 # ==========================================================
 track Mock_Samples
 compositeTrack on
-parent nanopore_data
+group nanopore_data
 shortLabel Mock_Samples
 longLabel Mock-Infected Controls
 type bigBed 12
@@ -107,13 +143,25 @@ itemRgb on
     track Mock_R1_F
     parent Mock_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock-1.wdx09.HSV1.sorted.fwd.bb
-    shortLabel Mock_R1_F
+    shortLabel Mock_1_F
     type bigBed 12
 
     track Mock_R1_R
     parent Mock_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock-1.wdx09.HSV1.sorted.rev.bb
-    shortLabel Mock_R1_R
+    shortLabel Mock_1_R
+    type bigBed 12
+
+    track Mock_R2_F
+    parent Mock_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock-2.wdx11.HSV1.sorted.fwd.bb
+    shortLabel Mock_2_F
+    type bigBed 12
+
+    track Mock_R2_R
+    parent Mock_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock-2.wdx11.HSV1.sorted.rev.bb
+    shortLabel Mock_2_R
     type bigBed 12
 
     track Mock_PTV_R1_F
@@ -126,4 +174,16 @@ itemRgb on
     parent Mock_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock_ptv-1.wdx11.HSV1.sorted.rev.bb
     shortLabel Mock_P1_R
+    type bigBed 12
+
+    track Mock_PTV_R2_F
+    parent Mock_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock_ptv-2.wdx12.HSV1.sorted.fwd.bb
+    shortLabel Mock_P2_F
+    type bigBed 12
+
+    track Mock_PTV_R2_R
+    parent Mock_Samples
+    bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock_ptv-2.wdx12.HSV1.sorted.rev.bb
+    shortLabel Mock_P2_R
     type bigBed 12
