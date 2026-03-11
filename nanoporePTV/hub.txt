@@ -5,7 +5,10 @@ useOneFile on
 email adamwhisnant88@gmail.com
 
 genome JN555585.1
+organism Human Herpesvirus 1
+description HSV-1 Strain 17 (JN555585.1)
 twoBitPath https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/UCSCmutants/JN555585.1.2bit
+groups groups.txt
 defaultPos JN555585.1:1-152222
 
 # --- Group Definitions ---
@@ -26,7 +29,6 @@ color 0,100,0
 # ==========================================================
 # 24h TIMEPOINT SAMPLES
 # ==========================================================
-
 track 24h_Samples
 compositeTrack on
 parent nanopore_data
@@ -36,7 +38,6 @@ type bigBed 12
 visibility pack
 itemRgb on
 
-    # --- 24h Standard Replicate 1 ---
     track 24h_Std_R1_F
     parent 24h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_24h-1.wdx05.HSV1.sorted.fwd.bb
@@ -49,7 +50,6 @@ itemRgb on
     shortLabel 24h_R1_R
     type bigBed 12
 
-    # --- 24h PTV Replicate 1 ---
     track 24h_PTV_R1_F
     parent 24h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_24h_ptv-1.wdx06.HSV1.sorted.fwd.bb
@@ -62,7 +62,6 @@ itemRgb on
     shortLabel 24h_P1_R
     type bigBed 12
 
-    # --- 24h PTV Replicate 2 ---
     track 24h_PTV_R2_F
     parent 24h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_24h_ptv-2.wdx07.HSV1.sorted.fwd.bb
@@ -78,7 +77,6 @@ itemRgb on
 # ==========================================================
 # 8h TIMEPOINT SAMPLES
 # ==========================================================
-
 track 8h_Samples
 compositeTrack on
 parent nanopore_data
@@ -88,7 +86,6 @@ type bigBed 12
 visibility pack
 itemRgb on
 
-    # --- 8h Standard Replicate 1 ---
     track 8h_Std_R1_F
     parent 8h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h-1.wdx03.HSV1.sorted.fwd.bb
@@ -101,7 +98,6 @@ itemRgb on
     shortLabel 8h_R1_R
     type bigBed 12
 
-    # --- 8h PTV Replicate 1 ---
     track 8h_PTV_R1_F
     parent 8h_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/HSV1_8h_ptv-1.wdx04.HSV1.sorted.fwd.bb
@@ -115,9 +111,8 @@ itemRgb on
     type bigBed 12
 
 # ==========================================================
-# MOCK SAMPLES (CONTROLS)
+# MOCK SAMPLES
 # ==========================================================
-
 track Mock_Samples
 compositeTrack on
 parent nanopore_data
@@ -127,7 +122,6 @@ type bigBed 12
 visibility hide
 itemRgb on
 
-    # --- Mock Replicate 1 ---
     track Mock_R1_F
     parent Mock_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock-1.wdx09.HSV1.sorted.fwd.bb
@@ -140,7 +134,6 @@ itemRgb on
     shortLabel Mock_R1_R
     type bigBed 12
 
-    # --- Mock PTV Replicate 1 ---
     track Mock_PTV_R1_F
     parent Mock_Samples
     bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/bigbeds/mock_ptv-1.wdx11.HSV1.sorted.fwd.bb
