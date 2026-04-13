@@ -1,10 +1,7 @@
-track hsv1_transcriptome
-longLabel HSV-1 Kinetic Transcriptome
-shortLabel HSV1_Kinetics
-bigDataUrl hsv1_transcriptome_v4.bb
+track hsv1_kinetic_v5_track
+longLabel HSV-1 Kinetic Transcriptome (Version 5)
+shortLabel HSV1_v5
+bigDataUrl hsv1_transcriptome_v5.bb
 type bigBed 9 + 4
 itemRgb on
 visibility pack
-group kinetics
-labelFields originalName,kineticClass,geneProduct
-defaultLabelFields originalName
