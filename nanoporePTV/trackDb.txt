@@ -1,0 +1,8 @@
+track Kinetic_Map
+shortLabel Kinetics
+longLabel Integrated Kinetic Class Assignments (Canonical & TBD)
+type bed 9
+bigDataUrl hsv1_final_viz.bed
+itemRgb On
+visibility pack
+priority 1
