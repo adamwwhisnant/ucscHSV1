@@ -1,9 +1,10 @@
 track mRNA_Full
 bigDataUrl hsv1_full_mRNAs.bb
 shortLabel Viral_mRNAs
-longLabel HSV-1 Full Transcript Kinetic Classes
-type bigBed 9 + 3
+longLabel HSV-1 Full Transcript Kinetic Classes and Products
+type bigBed 9 + 4
 itemRgb On
 visibility pack
-priority 1
 group kinetics
+labelFields originalName,kineticClass,geneProduct
+defaultLabelFields originalName
