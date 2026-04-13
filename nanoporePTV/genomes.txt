@@ -1,0 +1,6 @@
+genome BK012101.1
+trackDb BK012101.1/trackDb.txt
+twoBitPath BK012101.1/BK012101.1.2bit
+groups groups.txt
+organism Human herpesvirus 1
+defaultPos BK012101.1:1-152222
