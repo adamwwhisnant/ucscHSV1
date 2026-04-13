@@ -1,5 +1,5 @@
 track mRNA_Full
-bigDataUrl hsv1_full_mRNAs.bb
+bigDataUrl hsv1_transcriptome_v2.bb
 shortLabel Viral_mRNAs
 longLabel HSV-1 Full Transcript Kinetic Classes and Products
 type bigBed 9 + 4
