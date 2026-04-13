@@ -1,9 +1,9 @@
-track Kinetic_Map
-shortLabel Kinetics
-longLabel Integrated Viral mRNA Kinetics (Canonical & TBD)
+track mRNA_Full
+bigDataUrl hsv1_full_mRNAs.bb
+shortLabel Viral_mRNAs
+longLabel HSV-1 Full Transcript Kinetic Classes
 type bigBed 9 + 3
-bigDataUrl hsv1_metadata.bb
 itemRgb On
 visibility pack
-labelFields originalName,kineticClass,evidenceSource
-defaultLabelFields originalName
+priority 1
+group kinetics
