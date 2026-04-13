@@ -1,0 +1,9 @@
+name kinetics
+label Kinetic Classification
+priority 1
+defaultIsClosed off
+
+name nanopore
+label Raw Nanopore Data
+priority 2
+defaultIsClosed off
