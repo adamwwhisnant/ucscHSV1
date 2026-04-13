@@ -1,8 +1,9 @@
 track Kinetic_Map
 shortLabel Kinetics
-longLabel Integrated Kinetic Class Assignments (Canonical & TBD)
-type bed 9
-bigDataUrl hsv1_final_viz.bed
+longLabel Integrated Viral mRNA Kinetics (Canonical & TBD)
+type bigBed 9 + 3
+bigDataUrl hsv1_metadata.bb
 itemRgb On
 visibility pack
-priority 1
+labelFields originalName,kineticClass,evidenceSource
+defaultLabelFields originalName
