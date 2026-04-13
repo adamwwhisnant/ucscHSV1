@@ -1,5 +1,5 @@
 hub HSV1_Kinetic_Project
-shortLabel HSV1_Hub
+shortLabel HSV1 Kinetic Classes
 longLabel HSV-1 Strain 17 Kinetic Class Mapping Hub
 genomesFile genomes.txt
 email adamwhisnant88@gmail.com
