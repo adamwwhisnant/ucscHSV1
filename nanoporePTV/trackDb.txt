@@ -74,7 +74,7 @@ priority 20
 
     track 24h_U_R2_F
     parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_2.wdx06.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_2_wdx06.fwd.bb
     shortLabel 24U_R2_F
     color 0,0,255
     type bigBed 12
