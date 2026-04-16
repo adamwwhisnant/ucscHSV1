@@ -24,28 +24,28 @@ priority 10
 
     track 24h_PTV_R1_F
     parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_1.wdx06.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv_1_wdx06.fwd.bb
     shortLabel 24P_R1_F
     color 0,0,255
     type bigBed 12
 
     track 24h_PTV_R1_R
     parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_1.wdx06.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv_1_wdx06.rev.bb
     shortLabel 24P_R1_R
     color 255,0,0
     type bigBed 12
 
     track 24h_PTV_R2_F
     parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_2.wdx07.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv_2_wdx07.fwd.bb
     shortLabel 24P_R2_F
     color 0,0,255
     type bigBed 12
 
     track 24h_PTV_R2_R
     parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_2.wdx07.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv_2_wdx07.rev.bb
     shortLabel 24P_R2_R
     color 255,0,0
     type bigBed 12
@@ -60,14 +60,14 @@ priority 20
 
     track 24h_U_R1_F
     parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_1.wdx05.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_1_wdx05.fwd.bb
     shortLabel 24U_R1_F
     color 0,0,255
     type bigBed 12
 
     track 24h_U_R1_R
     parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_1.wdx05.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_1_wdx05.rev.bb
     shortLabel 24U_R1_R
     color 255,0,0
     type bigBed 12
@@ -81,7 +81,7 @@ priority 20
 
     track 24h_U_R2_R
     parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_2.wdx06.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_24h_2_wdx06.rev.bb
     shortLabel 24U_R2_R
     color 255,0,0
     type bigBed 12
@@ -100,28 +100,28 @@ priority 30
 
     track 8h_PTV_R1_F
     parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_1.wdx04.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv_1_wdx04.fwd.bb
     shortLabel 8P_R1_F
     color 0,0,255
     type bigBed 12
 
     track 8h_PTV_R1_R
     parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_1.wdx04.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv_1_wdx04.rev.bb
     shortLabel 8P_R1_R
     color 255,0,0
     type bigBed 12
 
     track 8h_PTV_R2_F
     parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_2.wdx05.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv_2_wdx05.fwd.bb
     shortLabel 8P_R2_F
     color 0,0,255
     type bigBed 12
 
     track 8h_PTV_R2_R
     parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_2.wdx05.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv_2_wdx05.rev.bb
     shortLabel 8P_R2_R
     color 255,0,0
     type bigBed 12
@@ -136,28 +136,28 @@ priority 40
 
     track 8h_U_R1_F
     parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_1.wdx03.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_1_wdx03.fwd.bb
     shortLabel 8U_R1_F
     color 0,0,255
     type bigBed 12
 
     track 8h_U_R1_R
     parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_1.wdx03.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_1_wdx03.rev.bb
     shortLabel 8U_R1_R
     color 255,0,0
     type bigBed 12
 
     track 8h_U_R2_F
     parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_2.wdx04.fwd.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_2_wdx04.fwd.bb
     shortLabel 8U_R2_F
     color 0,0,255
     type bigBed 12
 
     track 8h_U_R2_R
     parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_2.wdx04.rev.bb
+    bigDataUrl hub_ready_bb/HSV1_8h_2_wdx04.rev.bb
     shortLabel 8U_R2_R
     color 255,0,0
     type bigBed 12
@@ -176,28 +176,28 @@ priority 50
 
     track Mock_R1_F
     parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock-1.wdx09.HSV1.sorted.fwd.bb
+    bigDataUrl hub_ready_bb/mock_1_wdx09.fwd.bb
     shortLabel M1_F
     color 128,128,128
     type bigBed 12
 
     track Mock_R1_R
     parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock-1.wdx09.HSV1.sorted.rev.bb
+    bigDataUrl hub_ready_bb/mock_1_wdx09.rev.bb
     shortLabel M1_R
     color 128,128,128
     type bigBed 12
 
     track Mock_PTV_R1_F
     parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock_ptv-1.wdx11.HSV1.sorted.fwd.bb
+    bigDataUrl hub_ready_bb/mock_ptv_1_wdx11.fwd.bb
     shortLabel MP1_F
     color 128,128,128
     type bigBed 12
 
     track Mock_PTV_R1_R
     parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock_ptv-1.wdx11.HSV1.sorted.rev.bb
+    bigDataUrl hub_ready_bb/mock_ptv_1_wdx11.rev.bb
     shortLabel MP1_R
     color 128,128,128
     type bigBed 12
