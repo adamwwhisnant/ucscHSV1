@@ -1,3 +1,0 @@
-name nanopore_data
-label Nanopore Alignments
-priority 1
