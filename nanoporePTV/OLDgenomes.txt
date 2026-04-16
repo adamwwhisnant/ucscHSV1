@@ -1,7 +1,0 @@
-genome JN555585.1
-twoBitPath https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/UCSCmutants/JN555585.1.2bit
-organism Human Herpesvirus 1
-description HSV-1 Strain 17
-defaultPos JN555585.1:1-152222
-trackDb trackDb.txt
-groups groups.txt
