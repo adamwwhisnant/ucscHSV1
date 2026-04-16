@@ -1,203 +1,291 @@
 # --- KINETIC ANNOTATION TRACK (WITH SEARCH) ---
 track Kinetic_Annotations
-bigDataUrl hsv1_kinetic_v3.bb
+bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/hsv1_kinetic_v3.bb
 shortLabel Kinetic_Classes
 longLabel HSV-1 mRNA Kinetic Classification (Color-Coded)
 type bigBed 9
 visibility pack
 itemRgb on
-# SEARCH CONFIGURATION
 searchIndex name
 searchGuid on
+priority 1
 
 # ==========================================================
 # 24h TIMEPOINT SAMPLES
 # ==========================================================
-
 track 24h_PTV_Group
 compositeTrack on
 shortLabel 24h_PTV
-longLabel 24h Post-Infection (+PTV) Nanopore Reads
+longLabel 24h Post-Infection (+PTV) Nanopore
 type bigBed 12
 visibility pack
+subGroup1 view Views Fwd=Forward Rev=Reverse
+subGroup2 rep Replicate R1=Rep_1 R2=Rep_2
+dragAndDrop on
 priority 10
 
-    track 24h_PTV_R1_F
+    track 24h_PTV_Fwd_View
     parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_1_wdx06.fwd.bb
-    shortLabel 24P_R1_F
-    color 0,0,255
-    type bigBed 12
+    shortLabel 24h_PTV_F
+    view Fwd
+    visibility pack
 
-    track 24h_PTV_R1_R
+        track 24h_PTV_R1_F
+        parent 24h_PTV_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_1_wdx06.fwd.bb
+        shortLabel 24h_PTV_R1_F
+        subGroups view=Fwd rep=R1
+        color 0,0,255
+        type bigBed 12
+
+        track 24h_PTV_R2_F
+        parent 24h_PTV_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_2_wdx07.fwd.bb
+        shortLabel 24h_PTV_R2_F
+        subGroups view=Fwd rep=R2
+        color 0,100,255
+        type bigBed 12
+
+    track 24h_PTV_Rev_View
     parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_1_wdx06.rev.bb
-    shortLabel 24P_R1_R
-    color 255,0,0
-    type bigBed 12
+    shortLabel 24h_PTV_R
+    view Rev
+    visibility pack
 
-    track 24h_PTV_R2_F
-    parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_2_wdx07.fwd.bb
-    shortLabel 24P_R2_F
-    color 0,0,255
-    type bigBed 12
+        track 24h_PTV_R1_R
+        parent 24h_PTV_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_1_wdx06.rev.bb
+        shortLabel 24h_PTV_R1_R
+        subGroups view=Rev rep=R1
+        color 255,0,0
+        type bigBed 12
 
-    track 24h_PTV_R2_R
-    parent 24h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_ptv_2_wdx07.rev.bb
-    shortLabel 24P_R2_R
-    color 255,0,0
-    type bigBed 12
+        track 24h_PTV_R2_R
+        parent 24h_PTV_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_2_wdx07.rev.bb
+        shortLabel 24h_PTV_R2_R
+        subGroups view=Rev rep=R2
+        color 200,0,0
+        type bigBed 12
 
-track 24h_Untreated_Group
+track 24h_Un_Group
 compositeTrack on
-shortLabel 24h_Untr
-longLabel 24h Post-Infection (Untreated) Nanopore Reads
+shortLabel 24h_Un
+longLabel 24h Post-Infection (Untreated) Nanopore
 type bigBed 12
 visibility pack
-priority 20
+subGroup1 view Views Fwd=Forward Rev=Reverse
+subGroup2 rep Replicate R1=Rep_1 R2=Rep_2
+priority 11
 
-    track 24h_U_R1_F
-    parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_1_wdx05.fwd.bb
-    shortLabel 24U_R1_F
-    color 0,0,255
-    type bigBed 12
+    track 24h_Un_Fwd_View
+    parent 24h_Un_Group
+    shortLabel 24h_Un_F
+    view Fwd
+    visibility pack
 
-    track 24h_U_R1_R
-    parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_1_wdx05.rev.bb
-    shortLabel 24U_R1_R
-    color 255,0,0
-    type bigBed 12
+        track 24h_Un_R1_F
+        parent 24h_Un_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_1_wdx05.fwd.bb
+        shortLabel 24h_Un_R1_F
+        subGroups view=Fwd rep=R1
+        color 0,0,255
+        type bigBed 12
 
-    track 24h_U_R2_F
-    parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_2_wdx06.fwd.bb
-    shortLabel 24U_R2_F
-    color 0,0,255
-    type bigBed 12
+        track 24h_Un_R2_F
+        parent 24h_Un_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_2_wdx06.fwd.bb
+        shortLabel 24h_Un_R2_F
+        subGroups view=Fwd rep=R2
+        color 0,100,255
+        type bigBed 12
 
-    track 24h_U_R2_R
-    parent 24h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_24h_2_wdx06.rev.bb
-    shortLabel 24U_R2_R
-    color 255,0,0
-    type bigBed 12
+    track 24h_Un_Rev_View
+    parent 24h_Un_Group
+    shortLabel 24h_Un_R
+    view Rev
+    visibility pack
+
+        track 24h_Un_R1_R
+        parent 24h_Un_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_1_wdx05.rev.bb
+        shortLabel 24h_Un_R1_R
+        subGroups view=Rev rep=R1
+        color 255,0,0
+        type bigBed 12
+
+        track 24h_Un_R2_R
+        parent 24h_Un_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_2_wdx06.rev.bb
+        shortLabel 24h_Un_R2_R
+        subGroups view=Rev rep=R2
+        color 200,0,0
+        type bigBed 12
 
 # ==========================================================
 # 8h TIMEPOINT SAMPLES
 # ==========================================================
-
 track 8h_PTV_Group
 compositeTrack on
 shortLabel 8h_PTV
-longLabel 8h Post-Infection (+PTV) Nanopore Reads
+longLabel 8h Post-Infection (+PTV) Nanopore
 type bigBed 12
 visibility pack
-priority 30
+subGroup1 view Views Fwd=Forward Rev=Reverse
+subGroup2 rep Replicate R1=Rep_1 R2=Rep_2
+priority 20
 
-    track 8h_PTV_R1_F
+    track 8h_PTV_Fwd_View
     parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_1_wdx04.fwd.bb
-    shortLabel 8P_R1_F
-    color 0,0,255
-    type bigBed 12
+    shortLabel 8h_PTV_F
+    view Fwd
+    visibility pack
 
-    track 8h_PTV_R1_R
+        track 8h_PTV_R1_F
+        parent 8h_PTV_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_1_wdx04.fwd.bb
+        shortLabel 8h_PTV_R1_F
+        subGroups view=Fwd rep=R1
+        color 0,0,255
+        type bigBed 12
+
+        track 8h_PTV_R2_F
+        parent 8h_PTV_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_2_wdx05.fwd.bb
+        shortLabel 8h_PTV_R2_F
+        subGroups view=Fwd rep=R2
+        color 0,100,255
+        type bigBed 12
+
+    track 8h_PTV_Rev_View
     parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_1_wdx04.rev.bb
-    shortLabel 8P_R1_R
-    color 255,0,0
-    type bigBed 12
+    shortLabel 8h_PTV_R
+    view Rev
+    visibility pack
 
-    track 8h_PTV_R2_F
-    parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_2_wdx05.fwd.bb
-    shortLabel 8P_R2_F
-    color 0,0,255
-    type bigBed 12
+        track 8h_PTV_R1_R
+        parent 8h_PTV_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_1_wdx04.rev.bb
+        shortLabel 8h_PTV_R1_R
+        subGroups view=Rev rep=R1
+        color 255,0,0
+        type bigBed 12
 
-    track 8h_PTV_R2_R
-    parent 8h_PTV_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_ptv_2_wdx05.rev.bb
-    shortLabel 8P_R2_R
-    color 255,0,0
-    type bigBed 12
+        track 8h_PTV_R2_R
+        parent 8h_PTV_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_2_wdx05.rev.bb
+        shortLabel 8h_PTV_R2_R
+        subGroups view=Rev rep=R2
+        color 200,0,0
+        type bigBed 12
 
-track 8h_Untreated_Group
+track 8h_Un_Group
 compositeTrack on
-shortLabel 8h_Untr
-longLabel 8h Post-Infection (Untreated) Nanopore Reads
+shortLabel 8h_Un
+longLabel 8h Post-Infection (Untreated) Nanopore
 type bigBed 12
 visibility pack
-priority 40
+subGroup1 view Views Fwd=Forward Rev=Reverse
+subGroup2 rep Replicate R1=Rep_1 R2=Rep_2
+priority 21
 
-    track 8h_U_R1_F
-    parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_1_wdx03.fwd.bb
-    shortLabel 8U_R1_F
-    color 0,0,255
-    type bigBed 12
+    track 8h_Un_Fwd_View
+    parent 8h_Un_Group
+    shortLabel 8h_Un_F
+    view Fwd
+    visibility pack
 
-    track 8h_U_R1_R
-    parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_1_wdx03.rev.bb
-    shortLabel 8U_R1_R
-    color 255,0,0
-    type bigBed 12
+        track 8h_Un_R1_F
+        parent 8h_Un_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_1_wdx03.fwd.bb
+        shortLabel 8h_Un_R1_F
+        subGroups view=Fwd rep=R1
+        color 0,0,255
+        type bigBed 12
 
-    track 8h_U_R2_F
-    parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_2_wdx04.fwd.bb
-    shortLabel 8U_R2_F
-    color 0,0,255
-    type bigBed 12
+        track 8h_Un_R2_F
+        parent 8h_Un_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_2_wdx04.fwd.bb
+        shortLabel 8h_Un_R2_F
+        subGroups view=Fwd rep=R2
+        color 0,100,255
+        type bigBed 12
 
-    track 8h_U_R2_R
-    parent 8h_Untreated_Group
-    bigDataUrl hub_ready_bb/HSV1_8h_2_wdx04.rev.bb
-    shortLabel 8U_R2_R
-    color 255,0,0
-    type bigBed 12
+    track 8h_Un_Rev_View
+    parent 8h_Un_Group
+    shortLabel 8h_Un_R
+    view Rev
+    visibility pack
+
+        track 8h_Un_R1_R
+        parent 8h_Un_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_1_wdx03.rev.bb
+        shortLabel 8h_Un_R1_R
+        subGroups view=Rev rep=R1
+        color 255,0,0
+        type bigBed 12
+
+        track 8h_Un_R2_R
+        parent 8h_Un_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_2_wdx04.rev.bb
+        shortLabel 8h_Un_R2_R
+        subGroups view=Rev rep=R2
+        color 200,0,0
+        type bigBed 12
 
 # ==========================================================
-# MOCK SAMPLES (Mock & Mock+PTV)
+# MOCK SAMPLES
 # ==========================================================
-
-track Mock_Samples_Group
+track Mock_Group
 compositeTrack on
-shortLabel Mocks
+shortLabel Mock
 longLabel Mock Infection Controls
 type bigBed 12
 visibility hide
+subGroup1 view Views Fwd=Forward Rev=Reverse
+subGroup2 rep Replicate R1=Rep_1 R2=Rep_2
 priority 50
 
-    track Mock_R1_F
-    parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock_1_wdx09.fwd.bb
-    shortLabel M1_F
-    color 128,128,128
-    type bigBed 12
+    track Mock_Fwd_View
+    parent Mock_Group
+    shortLabel Mock_F
+    view Fwd
+    visibility pack
 
-    track Mock_R1_R
-    parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock_1_wdx09.rev.bb
-    shortLabel M1_R
-    color 128,128,128
-    type bigBed 12
+        track Mock_Un_R1_F
+        parent Mock_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_1_wdx09.fwd.bb
+        shortLabel Mock_Un_R1_F
+        subGroups view=Fwd rep=R1
+        color 128,128,128
+        type bigBed 12
 
-    track Mock_PTV_R1_F
-    parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock_ptv_1_wdx11.fwd.bb
-    shortLabel MP1_F
-    color 128,128,128
-    type bigBed 12
+        track Mock_Un_R2_F
+        parent Mock_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_2_wdx11.fwd.bb
+        shortLabel Mock_Un_R2_F
+        subGroups view=Fwd rep=R2
+        color 100,100,100
+        type bigBed 12
 
-    track Mock_PTV_R1_R
-    parent Mock_Samples_Group
-    bigDataUrl hub_ready_bb/mock_ptv_1_wdx11.rev.bb
-    shortLabel MP1_R
-    color 128,128,128
-    type bigBed 12
+        track Mock_PTV_R1_F
+        parent Mock_Fwd_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_ptv_1_wdx11.fwd.bb
+        shortLabel Mock_PTV_R1_F
+        subGroups view=Fwd rep=R1
+        color 128,128,128
+        type bigBed 12
+
+    track Mock_Rev_View
+    parent Mock_Group
+    shortLabel Mock_R
+    view Rev
+    visibility pack
+
+        track Mock_Un_R1_R
+        parent Mock_Rev_View
+        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_1_wdx09.rev.bb
+        shortLabel Mock_Un_R1_R
+        subGroups view=Rev rep=R1
+        color 128,128,128
+        type bigBed 12
