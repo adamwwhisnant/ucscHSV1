@@ -1,5 +1,0 @@
-hub HSV1_Nanopore_PTV
-shortLabel HSV_Nano_PTV
-longLabel HSV-1 Nanopore PTV Treatment Timecourse
-genomesFile genomes.txt
-email adamwhisnant88@gmail.com
