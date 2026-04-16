@@ -1,7 +1,203 @@
-track hsv1_kinetic_track
-longLabel HSV-1 Kinetic Transcriptome
-shortLabel HSV1_Classes
-bigDataUrl hsv1_kinetic_v2.bb
-type bigBed 9 + 4
-itemRgb on
+# --- KINETIC ANNOTATION TRACK (WITH SEARCH) ---
+track Kinetic_Annotations
+bigDataUrl hsv1_kinetic_v3.bb
+shortLabel Kinetic_Classes
+longLabel HSV-1 mRNA Kinetic Classification (Color-Coded)
+type bigBed 9
 visibility pack
+itemRgb on
+# SEARCH CONFIGURATION
+searchIndex name
+searchGuid on
+
+# ==========================================================
+# 24h TIMEPOINT SAMPLES
+# ==========================================================
+
+track 24h_PTV_Group
+compositeTrack on
+shortLabel 24h_PTV
+longLabel 24h Post-Infection (+PTV) Nanopore Reads
+type bigBed 12
+visibility pack
+priority 10
+
+    track 24h_PTV_R1_F
+    parent 24h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv-1.wdx06.HSV1.sorted.fwd.bb
+    shortLabel 24P_R1_F
+    color 0,0,255
+    type bigBed 12
+
+    track 24h_PTV_R1_R
+    parent 24h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv-1.wdx06.HSV1.sorted.rev.bb
+    shortLabel 24P_R1_R
+    color 255,0,0
+    type bigBed 12
+
+    track 24h_PTV_R2_F
+    parent 24h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv-2.wdx07.HSV1.sorted.fwd.bb
+    shortLabel 24P_R2_F
+    color 0,0,255
+    type bigBed 12
+
+    track 24h_PTV_R2_R
+    parent 24h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_24h_ptv-2.wdx07.HSV1.sorted.rev.bb
+    shortLabel 24P_R2_R
+    color 255,0,0
+    type bigBed 12
+
+track 24h_Untreated_Group
+compositeTrack on
+shortLabel 24h_Untr
+longLabel 24h Post-Infection (Untreated) Nanopore Reads
+type bigBed 12
+visibility pack
+priority 20
+
+    track 24h_U_R1_F
+    parent 24h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_24h-1.wdx05.HSV1.sorted.fwd.bb
+    shortLabel 24U_R1_F
+    color 0,0,255
+    type bigBed 12
+
+    track 24h_U_R1_R
+    parent 24h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_24h-1.wdx05.HSV1.sorted.rev.bb
+    shortLabel 24U_R1_R
+    color 255,0,0
+    type bigBed 12
+
+    track 24h_U_R2_F
+    parent 24h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_24h-2.wdx06.HSV1.sorted.fwd.bb
+    shortLabel 24U_R2_F
+    color 0,0,255
+    type bigBed 12
+
+    track 24h_U_R2_R
+    parent 24h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_24h-2.wdx06.HSV1.sorted.rev.bb
+    shortLabel 24U_R2_R
+    color 255,0,0
+    type bigBed 12
+
+# ==========================================================
+# 8h TIMEPOINT SAMPLES
+# ==========================================================
+
+track 8h_PTV_Group
+compositeTrack on
+shortLabel 8h_PTV
+longLabel 8h Post-Infection (+PTV) Nanopore Reads
+type bigBed 12
+visibility pack
+priority 30
+
+    track 8h_PTV_R1_F
+    parent 8h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv-1.wdx04.HSV1.sorted.fwd.bb
+    shortLabel 8P_R1_F
+    color 0,0,255
+    type bigBed 12
+
+    track 8h_PTV_R1_R
+    parent 8h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv-1.wdx04.HSV1.sorted.rev.bb
+    shortLabel 8P_R1_R
+    color 255,0,0
+    type bigBed 12
+
+    track 8h_PTV_R2_F
+    parent 8h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv-2.wdx05.HSV1.sorted.fwd.bb
+    shortLabel 8P_R2_F
+    color 0,0,255
+    type bigBed 12
+
+    track 8h_PTV_R2_R
+    parent 8h_PTV_Group
+    bigDataUrl hub_ready_bb/HSV1_8h_ptv-2.wdx05.HSV1.sorted.rev.bb
+    shortLabel 8P_R2_R
+    color 255,0,0
+    type bigBed 12
+
+track 8h_Untreated_Group
+compositeTrack on
+shortLabel 8h_Untr
+longLabel 8h Post-Infection (Untreated) Nanopore Reads
+type bigBed 12
+visibility pack
+priority 40
+
+    track 8h_U_R1_F
+    parent 8h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_8h-1.wdx03.HSV1.sorted.fwd.bb
+    shortLabel 8U_R1_F
+    color 0,0,255
+    type bigBed 12
+
+    track 8h_U_R1_R
+    parent 8h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_8h-1.wdx03.HSV1.sorted.rev.bb
+    shortLabel 8U_R1_R
+    color 255,0,0
+    type bigBed 12
+
+    track 8h_U_R2_F
+    parent 8h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_8h-2.wdx04.HSV1.sorted.fwd.bb
+    shortLabel 8U_R2_F
+    color 0,0,255
+    type bigBed 12
+
+    track 8h_U_R2_R
+    parent 8h_Untreated_Group
+    bigDataUrl hub_ready_bb/HSV1_8h-2.wdx04.HSV1.sorted.rev.bb
+    shortLabel 8U_R2_R
+    color 255,0,0
+    type bigBed 12
+
+# ==========================================================
+# MOCK SAMPLES (Mock & Mock+PTV)
+# ==========================================================
+
+track Mock_Samples_Group
+compositeTrack on
+shortLabel Mocks
+longLabel Mock Infection Controls
+type bigBed 12
+visibility hide
+priority 50
+
+    track Mock_R1_F
+    parent Mock_Samples_Group
+    bigDataUrl hub_ready_bb/mock-1.wdx09.HSV1.sorted.fwd.bb
+    shortLabel M1_F
+    color 128,128,128
+    type bigBed 12
+
+    track Mock_R1_R
+    parent Mock_Samples_Group
+    bigDataUrl hub_ready_bb/mock-1.wdx09.HSV1.sorted.rev.bb
+    shortLabel M1_R
+    color 128,128,128
+    type bigBed 12
+
+    track Mock_PTV_R1_F
+    parent Mock_Samples_Group
+    bigDataUrl hub_ready_bb/mock_ptv-1.wdx11.HSV1.sorted.fwd.bb
+    shortLabel MP1_F
+    color 128,128,128
+    type bigBed 12
+
+    track Mock_PTV_R1_R
+    parent Mock_Samples_Group
+    bigDataUrl hub_ready_bb/mock_ptv-1.wdx11.HSV1.sorted.rev.bb
+    shortLabel MP1_R
+    color 128,128,128
+    type bigBed 12
