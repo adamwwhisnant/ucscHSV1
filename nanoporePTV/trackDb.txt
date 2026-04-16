@@ -1,6 +1,6 @@
 # --- KINETIC ANNOTATION TRACK (WITH SEARCH) ---
 track Kinetic_Annotations
-bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/hsv1_kinetic_v3.bb
+bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hsv1_kinetic_v3.bb
 shortLabel Kinetic_Classes
 longLabel HSV-1 mRNA Kinetic Classification (Color-Coded)
 type bigBed 9
@@ -16,7 +16,7 @@ priority 1
 track 24h_PTV_Group
 compositeTrack on
 shortLabel 24h_PTV
-longLabel 24h Post-Infection (+PTV) Nanopore
+longLabel 24h Post-Infection (+PTV) Nanopore Reads
 type bigBed 12
 visibility pack
 subGroup1 view Views Fwd=Forward Rev=Reverse
@@ -26,14 +26,16 @@ priority 10
 
     track 24h_PTV_Fwd_View
     parent 24h_PTV_Group
-    shortLabel 24h_PTV_F
     view Fwd
+    shortLabel 24h_PTV_F
+    longLabel 24h PTV Forward Strand Reads
     visibility pack
 
         track 24h_PTV_R1_F
         parent 24h_PTV_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_1_wdx06.fwd.bb
         shortLabel 24h_PTV_R1_F
+        longLabel 24h PTV Replicate 1 Forward
         subGroups view=Fwd rep=R1
         color 0,0,255
         type bigBed 12
@@ -42,20 +44,23 @@ priority 10
         parent 24h_PTV_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_2_wdx07.fwd.bb
         shortLabel 24h_PTV_R2_F
+        longLabel 24h PTV Replicate 2 Forward
         subGroups view=Fwd rep=R2
         color 0,100,255
         type bigBed 12
 
     track 24h_PTV_Rev_View
     parent 24h_PTV_Group
-    shortLabel 24h_PTV_R
     view Rev
+    shortLabel 24h_PTV_R
+    longLabel 24h PTV Reverse Strand Reads
     visibility pack
 
         track 24h_PTV_R1_R
         parent 24h_PTV_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_1_wdx06.rev.bb
         shortLabel 24h_PTV_R1_R
+        longLabel 24h PTV Replicate 1 Reverse
         subGroups view=Rev rep=R1
         color 255,0,0
         type bigBed 12
@@ -64,6 +69,7 @@ priority 10
         parent 24h_PTV_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_ptv_2_wdx07.rev.bb
         shortLabel 24h_PTV_R2_R
+        longLabel 24h PTV Replicate 2 Reverse
         subGroups view=Rev rep=R2
         color 200,0,0
         type bigBed 12
@@ -71,7 +77,7 @@ priority 10
 track 24h_Un_Group
 compositeTrack on
 shortLabel 24h_Un
-longLabel 24h Post-Infection (Untreated) Nanopore
+longLabel 24h Post-Infection (Untreated) Nanopore Reads
 type bigBed 12
 visibility pack
 subGroup1 view Views Fwd=Forward Rev=Reverse
@@ -80,14 +86,16 @@ priority 11
 
     track 24h_Un_Fwd_View
     parent 24h_Un_Group
-    shortLabel 24h_Un_F
     view Fwd
+    shortLabel 24h_Un_F
+    longLabel 24h Untreated Forward Strand Reads
     visibility pack
 
         track 24h_Un_R1_F
         parent 24h_Un_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_1_wdx05.fwd.bb
         shortLabel 24h_Un_R1_F
+        longLabel 24h Untreated Replicate 1 Forward
         subGroups view=Fwd rep=R1
         color 0,0,255
         type bigBed 12
@@ -96,20 +104,23 @@ priority 11
         parent 24h_Un_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_2_wdx06.fwd.bb
         shortLabel 24h_Un_R2_F
+        longLabel 24h Untreated Replicate 2 Forward
         subGroups view=Fwd rep=R2
         color 0,100,255
         type bigBed 12
 
     track 24h_Un_Rev_View
     parent 24h_Un_Group
-    shortLabel 24h_Un_R
     view Rev
+    shortLabel 24h_Un_R
+    longLabel 24h Untreated Reverse Strand Reads
     visibility pack
 
         track 24h_Un_R1_R
         parent 24h_Un_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_1_wdx05.rev.bb
         shortLabel 24h_Un_R1_R
+        longLabel 24h Untreated Replicate 1 Reverse
         subGroups view=Rev rep=R1
         color 255,0,0
         type bigBed 12
@@ -118,6 +129,7 @@ priority 11
         parent 24h_Un_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_24h_2_wdx06.rev.bb
         shortLabel 24h_Un_R2_R
+        longLabel 24h Untreated Replicate 2 Reverse
         subGroups view=Rev rep=R2
         color 200,0,0
         type bigBed 12
@@ -128,7 +140,7 @@ priority 11
 track 8h_PTV_Group
 compositeTrack on
 shortLabel 8h_PTV
-longLabel 8h Post-Infection (+PTV) Nanopore
+longLabel 8h Post-Infection (+PTV) Nanopore Reads
 type bigBed 12
 visibility pack
 subGroup1 view Views Fwd=Forward Rev=Reverse
@@ -137,14 +149,16 @@ priority 20
 
     track 8h_PTV_Fwd_View
     parent 8h_PTV_Group
-    shortLabel 8h_PTV_F
     view Fwd
+    shortLabel 8h_PTV_F
+    longLabel 8h PTV Forward Strand Reads
     visibility pack
 
         track 8h_PTV_R1_F
         parent 8h_PTV_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_1_wdx04.fwd.bb
         shortLabel 8h_PTV_R1_F
+        longLabel 8h PTV Replicate 1 Forward
         subGroups view=Fwd rep=R1
         color 0,0,255
         type bigBed 12
@@ -153,20 +167,23 @@ priority 20
         parent 8h_PTV_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_2_wdx05.fwd.bb
         shortLabel 8h_PTV_R2_F
+        longLabel 8h PTV Replicate 2 Forward
         subGroups view=Fwd rep=R2
         color 0,100,255
         type bigBed 12
 
     track 8h_PTV_Rev_View
     parent 8h_PTV_Group
-    shortLabel 8h_PTV_R
     view Rev
+    shortLabel 8h_PTV_R
+    longLabel 8h PTV Reverse Strand Reads
     visibility pack
 
         track 8h_PTV_R1_R
         parent 8h_PTV_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_1_wdx04.rev.bb
         shortLabel 8h_PTV_R1_R
+        longLabel 8h PTV Replicate 1 Reverse
         subGroups view=Rev rep=R1
         color 255,0,0
         type bigBed 12
@@ -175,6 +192,7 @@ priority 20
         parent 8h_PTV_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_ptv_2_wdx05.rev.bb
         shortLabel 8h_PTV_R2_R
+        longLabel 8h PTV Replicate 2 Reverse
         subGroups view=Rev rep=R2
         color 200,0,0
         type bigBed 12
@@ -182,7 +200,7 @@ priority 20
 track 8h_Un_Group
 compositeTrack on
 shortLabel 8h_Un
-longLabel 8h Post-Infection (Untreated) Nanopore
+longLabel 8h Post-Infection (Untreated) Nanopore Reads
 type bigBed 12
 visibility pack
 subGroup1 view Views Fwd=Forward Rev=Reverse
@@ -191,14 +209,16 @@ priority 21
 
     track 8h_Un_Fwd_View
     parent 8h_Un_Group
-    shortLabel 8h_Un_F
     view Fwd
+    shortLabel 8h_Un_F
+    longLabel 8h Untreated Forward Strand Reads
     visibility pack
 
         track 8h_Un_R1_F
         parent 8h_Un_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_1_wdx03.fwd.bb
         shortLabel 8h_Un_R1_F
+        longLabel 8h Untreated Replicate 1 Forward
         subGroups view=Fwd rep=R1
         color 0,0,255
         type bigBed 12
@@ -207,20 +227,23 @@ priority 21
         parent 8h_Un_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_2_wdx04.fwd.bb
         shortLabel 8h_Un_R2_F
+        longLabel 8h Untreated Replicate 2 Forward
         subGroups view=Fwd rep=R2
         color 0,100,255
         type bigBed 12
 
     track 8h_Un_Rev_View
     parent 8h_Un_Group
-    shortLabel 8h_Un_R
     view Rev
+    shortLabel 8h_Un_R
+    longLabel 8h Untreated Reverse Strand Reads
     visibility pack
 
         track 8h_Un_R1_R
         parent 8h_Un_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_1_wdx03.rev.bb
         shortLabel 8h_Un_R1_R
+        longLabel 8h Untreated Replicate 1 Reverse
         subGroups view=Rev rep=R1
         color 255,0,0
         type bigBed 12
@@ -229,6 +252,7 @@ priority 21
         parent 8h_Un_Rev_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/HSV1_8h_2_wdx04.rev.bb
         shortLabel 8h_Un_R2_R
+        longLabel 8h Untreated Replicate 2 Reverse
         subGroups view=Rev rep=R2
         color 200,0,0
         type bigBed 12
@@ -248,44 +272,31 @@ priority 50
 
     track Mock_Fwd_View
     parent Mock_Group
-    shortLabel Mock_F
     view Fwd
+    shortLabel Mock_F
+    longLabel Mock Forward Strand Reads
     visibility pack
 
         track Mock_Un_R1_F
         parent Mock_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_1_wdx09.fwd.bb
         shortLabel Mock_Un_R1_F
+        longLabel Mock Untreated R1 Forward
         subGroups view=Fwd rep=R1
         color 128,128,128
-        type bigBed 12
-
-        track Mock_Un_R2_F
-        parent Mock_Fwd_View
-        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_2_wdx11.fwd.bb
-        shortLabel Mock_Un_R2_F
-        subGroups view=Fwd rep=R2
-        color 100,100,100
         type bigBed 12
 
         track Mock_PTV_R1_F
         parent Mock_Fwd_View
         bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_ptv_1_wdx11.fwd.bb
         shortLabel Mock_PTV_R1_F
+        longLabel Mock PTV R1 Forward
         subGroups view=Fwd rep=R1
-        color 128,128,128
+        color 150,150,150
         type bigBed 12
 
     track Mock_Rev_View
     parent Mock_Group
-    shortLabel Mock_R
     view Rev
-    visibility pack
-
-        track Mock_Un_R1_R
-        parent Mock_Rev_View
-        bigDataUrl https://raw.githubusercontent.com/adamwwhisnant/ucscHSV1/main/nanoporePTV/hub_ready_bb/mock_1_wdx09.rev.bb
-        shortLabel Mock_Un_R1_R
-        subGroups view=Rev rep=R1
-        color 128,128,128
-        type bigBed 12
+    shortLabel Mock_R
+    longLabel Mock Reverse Strand Reads
