@@ -2,4 +2,6 @@ genome BK012101.1
 trackDb trackDb.txt
 twoBitPath BK012101.1.2bit
 organism Human herpesvirus 1
+scientificName Human alphaherpesvirus 1
+description HSV-1 Strain 17 (BK012101.1)
 defaultPos BK012101.1:1-152222
