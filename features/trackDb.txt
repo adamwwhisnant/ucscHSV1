@@ -4,7 +4,7 @@ compositeTrack on
 shortLabel Viral CDS Group
 longLabel Viral Coding Sequences (CDS)
 group user
-visibility dense
+visibility pack
 type bigBed 12
 dragAndDrop subTracks
 
