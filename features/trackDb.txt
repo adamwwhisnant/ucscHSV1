@@ -37,16 +37,3 @@ dragAndDrop subTracks
     itemRgb On
     visibility pack
     searchIndex name
-
-# --- Search Specifications for Custom Assembly ---
-searchTable viral_cds
-searchMethod exact
-searchType bed
-termRegex [A-Za-z0-9_\#\*]+
-searchPriority 50
-
-searchTable viral_mrnas
-searchMethod exact
-searchType bed
-termRegex [A-Za-z0-9_\#\*]+
-searchPriority 51
