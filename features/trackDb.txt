@@ -13,7 +13,7 @@ dragAndDrop subTracks
     shortLabel Viral CDS
     longLabel CDS Annotations
     type bigBed 12
-    bigDataUrl cds.bb
+    bigDataUrl cds2.bb
     itemRgb On
     visibility pack
     searchIndex name
@@ -33,7 +33,7 @@ dragAndDrop subTracks
     shortLabel Viral mRNAs
     longLabel Transcript Annotations
     type bigBed 12
-    bigDataUrl mrnas.bb
+    bigDataUrl mrnas2.bb
     itemRgb On
     visibility pack
     searchIndex name
