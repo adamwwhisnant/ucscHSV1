@@ -15,7 +15,7 @@ dragAndDrop subTracks
     type bigBed 12
     bigDataUrl cds.bb
     itemRgb On
-    visibility dense
+    visibility pack
     searchIndex name
 
 # --- Group 2: Viral mRNA Composite Track ---
