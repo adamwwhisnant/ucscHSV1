@@ -1,0 +1,39 @@
+# --- Group 1: Viral CDS Composite Track ---
+track cds_composite
+compositeTrack on
+shortLabel Viral CDS Group
+longLabel Viral Coding Sequences (CDS)
+group user
+visibility dense
+type bigBed 12
+dragAndDrop subTracks
+
+    track viral_cds
+    parent cds_composite on
+    shortLabel Viral CDS
+    longLabel CDS Annotations
+    type bigBed 12
+    bigDataUrl cds.bb
+    itemRgb On
+    visibility dense
+    searchIndex name
+
+# --- Group 2: Viral mRNA Composite Track ---
+track mrna_composite
+compositeTrack on
+shortLabel Viral mRNA Group
+longLabel Viral Transcripts (mRNA)
+group user
+visibility pack
+type bigBed 12
+dragAndDrop subTracks
+
+    track viral_mrnas
+    parent mrna_composite on
+    shortLabel Viral mRNAs
+    longLabel Transcript Annotations
+    type bigBed 12
+    bigDataUrl mrnas.bb
+    itemRgb On
+    visibility pack
+    searchIndex name
